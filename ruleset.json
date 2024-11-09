@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "modifyHeaders",
+      "responseHeaders": [
+        {
+          "operation": "set",
+          "header": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    },
+    "condition": {
+      "urlFilter": "https://pcm.kakaocdn.net/*",
+      "resourceTypes": [
+        "csp_report",
+        "font",
+        "image",
+        "main_frame",
+        "media",
+        "object",
+        "other",
+        "ping",
+        "script",
+        "stylesheet",
+        "sub_frame",
+        "webbundle",
+        "websocket",
+        "webtransport",
+        "xmlhttprequest"
+      ]
+    }
+  }
+]

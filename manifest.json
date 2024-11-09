@@ -1,0 +1,31 @@
+{
+  "name": "Biccola",
+  "description": "Base Level Extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "icons": {
+    "128": "icon128.png"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "declarativeNetRequest",
+    "downloads"
+  ],
+  "declarative_net_request": {
+    "rule_resources": [
+      {
+        "id": "ruleset",
+        "enabled": true,
+        "path": "ruleset.json"
+      }
+    ]
+  },
+  "host_permissions": [
+    "https://pcm.kakaocdn.net/*"
+  ]
+}
